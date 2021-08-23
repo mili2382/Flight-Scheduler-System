@@ -1,0 +1,220 @@
+User: Invalid starting location.
+
+User: Successfully added location Berlin.
+
+User: Successfully added location NewYork.
+
+User: Successfully added Flight 0.
+
+User: Flights
+-------------------------------------------------------
+ID   Departure   Arrival     Source --> Destination
+-------------------------------------------------------
+   0 Sun 20:00   Mon 04:52   Berlin --> NewYork
+
+User: Locations (2):
+Berlin, NewYork
+
+User: Flight 0
+Departure:    Sun 20:00 Berlin
+Arrival:      Mon 04:52 NewYork
+Distance:     6,387km
+Duration:     8h 52m
+Ticket Cost:  $1636.01
+Passengers:   0/250
+
+User: Scheduling conflict! This flight clashes with Flight 0 arriving at NewYork on Monday 04:52.
+
+User: Error reading file.
+
+User: Imported 0 flights.
+182 lines were invalid.
+
+User: Error reading file.
+
+User: Imported 49 locations.
+2 lines were invalid.
+
+User: Imported 2 locations.
+
+User: Imported 182 flights.
+
+User: Exported 183 flights.
+
+User: Exported 53 locations.
+
+User: Booked 20 passengers on flight 0 for a total cost of $29178.44
+
+User: Booked 20 passengers on flight 0 for a total cost of $26751.96
+
+User: Invalid command. Type 'help' for a list of commands.
+
+User: Invalid command. Type 'help' for a list of commands.
+
+User: Usage:   LOCATION ADD <name> <lat> <long> <demand_coefficient>
+Example: LOCATION ADD Sydney -33.847927 150.651786 0.2
+
+User: This location already exists.
+
+User: Invalid latitude. It must be a number of degrees between -85 and +85.
+
+User: Invalid longitude. It must be a number of degrees between -180 and +180.
+
+User: Invalid demand coefficient. It must be a number between -1 and +1.
+
+User: Invalid latitude. It must be a number of degrees between -85 and +85.
+
+User: Invalid longitude. It must be a number of degrees between -180 and +180.
+
+User: Invalid demand coefficient. It must be a number between -1 and +1.
+
+User: Invalid location name.
+
+User: Location:    Sydney
+Latitude:    -33.847927
+Longitude:   150.651786
+Demand:      +0.4000
+
+User: Successfully added Flight 183.
+
+User: Invalid Flight ID.
+
+User: Removed Flight 183, Mon 20:00 Berlin --> NewYork, from the flight schedule.
+
+User: Invalid departure time. Use the format <day_of_week> <hour:minute>, with 24h time.
+
+User: Invalid departure time. Use the format <day_of_week> <hour:minute>, with 24h time.
+
+User: Invalid starting location.
+
+User: Invalid ending location.
+
+User: Invalid positive integer capacity.
+
+User: Source and destination cannot be the same place.
+
+User: Invalid command. Type 'help' for a list of commands.
+
+User: Booked 20 passengers on flight 1 for a total cost of $49884.26
+
+User: Invalid Flight ID.
+
+User: Invalid command. Type 'help' for a list of commands.
+
+User: Invalid number of passengers to book.
+
+User: Invalid Flight ID.
+
+User: Booked 215 passengers on flight 1 for a total cost of $552412.42
+Flight is now full.
+
+User: Reset passengers booked to 0 for Flight 1, Wed 09:00 Sydney --> Beijing.
+
+User: Invalid Flight ID.
+
+User: Invalid Flight ID.
+
+User: Booked 280 passengers on flight 1 for a total cost of $720187.37
+Flight is now full.
+
+User: Sydney
+-------------------------------------------------------
+ID   Time        Departure/Arrival to/from Location
+-------------------------------------------------------
+ 167 Mon 10:30   Departure to Dubai
+ 101 Mon 12:00   Departure to Jakarta
+ 104 Mon 13:33   Arrival from AbuDhabi
+  90 Mon 19:00   Departure to Hobart
+  91 Mon 21:30   Departure to Hobart
+ 174 Tue 02:38   Arrival from AliceSprings
+ 175 Tue 04:00   Departure to AliceSprings
+  70 Tue 05:00   Departure to LosAngeles
+ 100 Tue 08:27   Arrival from Hobart
+   1 Wed 09:00   Departure to Beijing
+   6 Wed 10:00   Departure to AbuDhabi
+ 162 Wed 11:00   Departure to LosAngeles
+ 163 Wed 13:00   Departure to Dubbo
+ 166 Wed 15:23   Arrival from Dubbo
+ 164 Wed 18:00   Departure to Orange
+ 165 Wed 20:14   Arrival from Orange
+   7 Thu 04:44   Arrival from AbuDhabi
+   4 Thu 11:11   Arrival from Hanoi
+ 132 Fri 14:00   Departure to AbuDhabi
+ 114 Sat 04:00   Departure to Perth
+ 115 Sat 06:00   Departure to Perth
+ 113 Sat 09:00   Departure to Perth
+
+User: Sydney
+-------------------------------------------------------
+ID   Time        Departure/Arrival to/from Location
+-------------------------------------------------------
+ 104 Mon 13:33   Arrival from AbuDhabi
+ 174 Tue 02:38   Arrival from AliceSprings
+ 100 Tue 08:27   Arrival from Hobart
+ 166 Wed 15:23   Arrival from Dubbo
+ 165 Wed 20:14   Arrival from Orange
+   7 Thu 04:44   Arrival from AbuDhabi
+   4 Thu 11:11   Arrival from Hanoi
+
+User: Sydney
+-------------------------------------------------------
+ID   Time        Departure/Arrival to/from Location
+-------------------------------------------------------
+ 167 Mon 10:30   Departure to Dubai
+ 101 Mon 12:00   Departure to Jakarta
+  90 Mon 19:00   Departure to Hobart
+  91 Mon 21:30   Departure to Hobart
+ 175 Tue 04:00   Departure to AliceSprings
+  70 Tue 05:00   Departure to LosAngeles
+   1 Wed 09:00   Departure to Beijing
+   6 Wed 10:00   Departure to AbuDhabi
+ 162 Wed 11:00   Departure to LosAngeles
+ 163 Wed 13:00   Departure to Dubbo
+ 164 Wed 18:00   Departure to Orange
+ 132 Fri 14:00   Departure to AbuDhabi
+ 114 Sat 04:00   Departure to Perth
+ 115 Sat 06:00   Departure to Perth
+ 113 Sat 09:00   Departure to Perth
+
+User: FLIGHTS - list all available flights ordered by departure time, then departure location name
+FLIGHT ADD <departure time> <from> <to> <capacity> - add a flight
+FLIGHT IMPORT/EXPORT <filename> - import/export flights to csv file
+FLIGHT <id> - view information about a flight (from->to, departure arrival times, current ticket price, capacity, passengers booked)
+FLIGHT <id> BOOK <num> - book a certain number of passengers for the flight at the current ticket price, and then adjust the ticket price to reflect the reduced capacity remaining. If no number is given, book 1 passenger. If the given number of bookings is more than the remaining capacity, only accept bookings until the capacity is full.
+FLIGHT <id> REMOVE - remove a flight from the schedule
+FLIGHT <id> RESET - reset the number of passengers booked to 0, and the ticket price to its original state.
+
+LOCATIONS - list all available locations in alphabetical order
+LOCATION ADD <name> <lat> <long> <demand_coefficient> - add a location
+LOCATION <name> - view details about a location (it's name, coordinates, demand coefficient)
+LOCATION IMPORT/EXPORT <filename> - import/export locations to csv file
+SCHEDULE <location_name> - list all departing and arriving flights, in order of the time they arrive/depart
+DEPARTURES <location_name> - list all departing flights, in order of departure time
+ARRIVALS <location_name> - list all arriving flights, in order of arrival time
+
+TRAVEL <from> <to> [sort] [n] - list the nth possible flight route between a starting location and destination, with a maximum of 3 stopovers. Default ordering is for shortest overall duration. If n is not provided, display the first one in the order. If n is larger than the number of flights available, display the last one in the ordering.
+
+can have other orderings:
+TRAVEL <from> <to> cost - minimum current cost
+TRAVEL <from> <to> duration - minimum total duration
+TRAVEL <from> <to> stopovers - minimum stopovers
+TRAVEL <from> <to> layover - minimum layover time
+TRAVEL <from> <to> flight_time - minimum flight time
+
+HELP - outputs this help string.
+EXIT - end the program.
+
+User: This location does not exist in the system.
+
+User: This location does not exist in the system.
+
+User: This location does not exist in the system.
+
+User: Scheduling conflict! This flight clashes with Flight 0 departing from Berlin on Sunday 20:00.
+
+User: Imported 1 location.
+3 lines were invalid.
+
+User: import flight2
+
+User: Application closed.

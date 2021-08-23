@@ -1,0 +1,61 @@
+flight add monday 18:00 Sydney Melbourne 120
+location add Berlin 52.5 13.15 0.22222
+location add NewYork 40.7 -74.26 -0.874
+flight add sunday 20:00 Berlin NewYork 250 
+flights
+locations
+flight 0
+flight add monday 05:00 newYork berlin 234
+flight import flights.csv
+flight import flights6.csv
+location import locations6.csv 
+location import locations.csv 
+location import locations4.csv 
+flight import flights6.csv
+flight export flightss.csv
+location export locations2.csv
+flight 0 book 20
+flight 0 book 20
+fligh1 book 100
+fligh 2
+location add
+location add Berlin 52.5 13.15 0.22222
+location add Chongqing XX 55 0.22222
+location add Chongqing 55 XX 0.22222
+location add Chongqing 55 55 XX
+location add Chongqing 100 55 55
+location add Chongqing 55 200 55
+location add Chongqing 55 55 55
+location Chongqing
+location Sydney
+flight add monday 20:00 Berlin NewYork 250
+remove flight 183
+flight 183 remove
+flight add moday 20:00 Berlin NewYork 250
+flight add monday 25:00 Berlin NewYork 250
+flight add monday 23:00 Chongqing NewYork 250
+flight add monday 23:00 NewYork Chongqing 250
+flight add monday 20:00 Berlin NewYork -250
+flight add monday 20:00 Berlin Berlin 250
+XX
+flight 1 book 20
+flight XX book 20
+flight 1 book -20
+flight -1 book 20
+flight 1 book 500
+flight 1 reset
+flight -1 reset
+flight X reset
+flight 1 book 280
+schedule sydney
+arrivals sydney
+departures sydney
+help
+schedule Chongqing
+arrivals Chongqing
+departures Chongqing
+flight add sunday 19:50 Berlin NewYork 250
+location import locations2.csv
+import flight2
+exit
+
